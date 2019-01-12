@@ -21,10 +21,16 @@ Grey dark 3: #999
     padding: 0;
 }
 
+// The *  universal selector targets all types of elements, it is not the root css selector.
+// When we set box-sizing to inherit on all types of elements, we are basically saying that 
+// we want the box-sizing to inherit whatever the parent's box-sizing is.  Since we set the 
+// box-sizing property to border-box on the <body>  element (which is one of the document's 
+// top-most nodes), the property is effectively passed on to all child / grandchild elements.
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    font-size: 62.5%; // 1rem = 10px
 }
 
 html {
