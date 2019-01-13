@@ -31,6 +31,11 @@
             width: 100%;
             background-color: var(--color-grey-light-3);
         }
+
+        // Now only works in Chrome and Safari browsers
+        &::-webkit-input-placeholder {
+            font-weight: 
+        }
     }
 
     &__input:focus + &__button {
