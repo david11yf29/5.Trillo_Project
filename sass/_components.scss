@@ -7,6 +7,7 @@
 ////////////////////////////////////////
 //// SEARCH
 .search {
+    background-color: orangered;
     &__input {
 
     }
@@ -25,6 +26,7 @@
 ////////////////////////////////////////
 //// USER NAVIGATION
 .user-nav {
+    background-color: greenyellow;
     &__icon-box {
 
     }
@@ -43,11 +45,11 @@
     }
 
     &__user-photo {
-        
+        height: 3.75rem;
+        border-radius: 50%;
     }
 
     &__user-name {
-        height: 3.75rem;
-        border-radius: 50%;
+        
     }
 }
