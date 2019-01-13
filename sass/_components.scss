@@ -34,7 +34,8 @@
 
         // Now only works in Chrome and Safari browsers
         &::-webkit-input-placeholder {
-            font-weight: 
+            font-weight: 100;
+            color: var(--color-grey-light-4);
         }
     }
 
@@ -68,6 +69,16 @@
 //// USER NAVIGATION
 .user-nav {
     background-color: greenyellow;
+
+    display: flex;
+    align-items: center;
+
+    // CSS Combinators(>, +, and ~) https://www.w3schools.com/css/css_combinators.asp
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+    }    
+
     &__icon-box {
 
     }
