@@ -2,7 +2,7 @@
 //// LOGO
 .logo {
     height: 3.25rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 ////////////////////////////////////////
@@ -68,7 +68,6 @@
 ////////////////////////////////////////
 //// USER NAVIGATION
 .user-nav {
-    background-color: greenyellow;
     // https://cssreference.io/property/align-self/
     align-self: stretch;
 
@@ -106,20 +105,18 @@
         background-color: var(--color-primary);
         color: #fff;
         position: absolute;
-        top: 0;
-        right: 1rem;
-    }
+        top: 1.5rem;
+        right: 1.1rem;
 
-    &__user {
-        
+        // text also works with the flexbox
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
-    }
-
-    &__user-name {
-        
+        margin-right: 1rem;
     }
 }
