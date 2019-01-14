@@ -130,7 +130,18 @@
     margin-top: 3.5rem;
 
     &__item {
+        position: relative;
+    }
 
+    // 這方法很好用要多記住
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary);
     }
 
     &__link:link,
@@ -138,11 +149,20 @@
         color: var(--color-grey-light-1);
         text-decoration: none;
         text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 3rem;
+        
+        display: flex;
+        align-items: center;
     }
 
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
+        margin-right: 2rem;
+
+        // currentColor will be current or parent color
+        fill: currentColor;
     }
 }
 
