@@ -1,5 +1,6 @@
 // container 包含 上header + 下content
 // content 包含 左sidebar + 右hotel-view
+
 .container {
     // 最多就1200px，小於就等於目前視窗(viewport)
     max-width: 120rem;
@@ -46,6 +47,7 @@
 .sidebar {
     background-color: var(--color-grey-dark-1);
 
+    // no grow no shrink basis 18%
     flex: 0 0 18%;
     display: flex;
     flex-direction: column;
@@ -55,8 +57,8 @@
 .hotel-view {
     background-color: #fff;
 
+    // 能延伸多少算多少這裡為82%(100%-18%=82%)
     flex: 1;
-
 }
 
 .detail {
