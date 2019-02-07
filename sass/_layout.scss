@@ -1,13 +1,14 @@
-// container 包含 header + content
-// content 包含 sidebar + hotel-view
+// container 包含 上header + 下content
+// content 包含 左sidebar + 右hotel-view
 .container {
     // 最多就1200px，小於就等於目前視窗(viewport)
     max-width: 120rem;
-    
+
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
     box-shadow: var(--shadow-dark);
 
+    // min- 跟之前用法一樣
     min-height: 50rem;
 
     @media only screen and (max-width: $bp-largest) {
