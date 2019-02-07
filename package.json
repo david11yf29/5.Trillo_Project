@@ -24,3 +24,4 @@
 }
 
 // 第一步先npm install安裝所有devDependencies
+// 接著npm run start開啟watch:sass和devserver
