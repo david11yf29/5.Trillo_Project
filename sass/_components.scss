@@ -82,15 +82,19 @@
 //// USER NAVIGATION
 .user-nav {
     // https://cssreference.io/property/align-self/
+    // 先讓下面三個element延伸到底
     align-self: stretch;
 
     display: flex;
     align-items: center;
 
     // CSS Combinators(>, +, and ~) https://www.w3schools.com/css/css_combinators.asp
+    // > must be direct children
     & > * {
         padding: 0 2rem;
         cursor: pointer;
+
+        // 讓格子等於外筐
         height: 100%;
         display: flex;
         align-items: center;
