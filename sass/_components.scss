@@ -228,7 +228,7 @@
         height: 1.75rem;
         margin-right: 2rem;
 
-        // currentColor will be current or parent color
+        // currentColor will be current or parent(__link) color
         fill: currentColor;
 
         @media only screen and (max-width: $bp-small) {
