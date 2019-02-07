@@ -25,14 +25,19 @@
         font-size: inherit;
         color: inherit;
         background-color: var(--color-grey-light-2);
+
+        // form 邊筐
         border: none;
-        padding: .7rem 2rem;
+
+        padding: 0.7rem 2rem;
         border-radius: 100px;
         width: 90%;
         transition: all .2s;
         margin-right: -3.25rem; 
 
         &:focus {
+
+            // 藍色淺色邊筐
             outline: none;
             width: 100%;
             background-color: var(--color-grey-light-3);
@@ -45,6 +50,7 @@
         }
     }
 
+    // Only both are siblings can use this method
     &__input:focus + &__button {
         background-color: var(--color-grey-light-3);
     }
