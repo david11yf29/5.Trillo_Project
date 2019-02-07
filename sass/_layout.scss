@@ -1,5 +1,9 @@
+// container 包含 header + content
+// content 包含 sidebar + hotel-view
 .container {
+    // 最多就1200px，小於就等於目前視窗(viewport)
     max-width: 120rem;
+    
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
     box-shadow: var(--shadow-dark);
