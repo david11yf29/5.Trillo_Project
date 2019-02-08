@@ -518,7 +518,7 @@
     &__text {
         margin-bottom: 2rem;
 
-        // z-index must combine with relative
+        // z-index must combine with position
         z-index: 10;
         position: relative;
     }
@@ -536,6 +536,8 @@
     }
 
     &__user-box {
+
+        // 直接把分數推到最右邊底
         margin-right: auto;
     }
 
@@ -558,7 +560,9 @@
     }
 
     &::before {
+
         // 符號有代號跟一般content: "";不太一樣
+        // Glyphs
         content: "\201C";
         position: absolute;
         top: -2.75rem;
