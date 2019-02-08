@@ -604,6 +604,8 @@
     background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
     color: #fff;
     position: relative;
+
+    // 把invisible往上超出去的字蓋掉
     overflow: hidden;
     cursor: pointer;
 
@@ -619,9 +621,13 @@
     }
 
     &__invisible {
+
+        // 完全複製visible格式並且在他正上方
         position: absolute;
         padding: 2rem 0;
         left: 0;
+
+        // 往上平移100%
         top: -100%;
     }
 
