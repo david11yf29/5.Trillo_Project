@@ -81,6 +81,8 @@
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
+
+    // 佔格子全部的60%
     flex: 0 0 60%;
     margin-right: 4.5rem;
 
@@ -96,6 +98,8 @@
 }
 
 .user-reviews {
+
+    //呼應上面的flex: 0 0 60%後，剩下的所有空間
     flex: 1;
 
     display: flex;
