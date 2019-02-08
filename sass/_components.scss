@@ -453,7 +453,7 @@
         background-image: url(../img/chevron-thin-right.svg);
         background-size: cover;
 
-        // Newer browsers - masks 記得學起來
+        // Newer browsers - masks 記得學起來: 底下全紅，只有mask形狀可以透過去看到後面顏色，其他遮住
         @supports (-webkit-mask-image: url()) or (mask-image: url()) {
             background-color: var(--color-primary);
             -webkit-mask-image: url(../img/chevron-thin-right.svg);
@@ -485,7 +485,9 @@
     }
 
     &__photo {
-        // 需要再瞭解一下content-box
+
+        // content-box: total width = content box width + 2 * padding + 2 * border
+        // border-box: content box width = total width - 2 * padding - 2 * border
         box-sizing: content-box;
         height: 4rem;
         width: 4rem;
