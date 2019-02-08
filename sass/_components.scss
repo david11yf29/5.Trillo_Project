@@ -265,6 +265,8 @@
 
     &__photo {
         width: 100%;
+
+        // img should always be block or inline block if we don't want white space
         display: block;
 
     }
@@ -292,8 +294,11 @@
     }
 
     &__stars {
+
         // Very nice trick in flexbox, only occupy stars space that it needs
         margin-right: auto;
+
+        // 移除底下多餘空格
         display: flex;
     }
 
@@ -319,9 +324,12 @@
         color: #fff;
         margin-left: 3rem;
         padding: 0 2.25rem;
+
+        // 讓background-color可以延伸到上下 flexbox - item
         align-self: stretch;
 
         display: flex;
+        
         // 讓左右變上下排列
         flex-direction: column;
         align-items: center;
@@ -380,6 +388,8 @@
 
     &:focus {
         outline: none;
+
+        // 這邊要會設定下面的 keyframes animation
         animation: pulsate 1s infinite;
     }
 }
