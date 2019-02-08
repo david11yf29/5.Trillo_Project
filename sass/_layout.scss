@@ -32,6 +32,8 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-smallest) {
+
+        // 沒有space就直接往下移動到下一排
         flex-wrap: wrap;
         align-content: space-around;
         height: 11rem;

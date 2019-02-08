@@ -18,6 +18,8 @@
         
         // 將search排列移動到最後面，好用
         order: 1;
+
+        // 伸長後搭配flex-wrap: wrap直接到下一排伸到最長
         flex:  0 0 100%;
         background-color: var(--color-grey-light-2);
     }
