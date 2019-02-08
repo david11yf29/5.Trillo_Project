@@ -14,6 +14,8 @@
 
     @media only screen and (max-width: $bp-largest) {
         margin: 0;
+
+        // 120rem * 8px = 960px(原本是1200px)，因此這邊要再把畫面調寬一點
         max-width: 100;
         width: 100%;
     }
